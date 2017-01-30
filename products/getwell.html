@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../favicon.ico">
+  <title>flower shop</title>
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../css/justified-nav.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="masthead">
+      <h3 class="text-muted">Flowers and Gifts Shop</h3>
+      <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html"><img src="../favicon.ico" alt=""> Home</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link " href="../about.html">About <span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="love.html">Love and Romance</a>
+                  <a class="dropdown-item" href="corporate.html">Corporate Events</a>
+                  <a class="dropdown-item" href="weddings.html">Weddings</a>
+                  <a class="dropdown-item" href="newborns.html">Newborns</a>
+                  <a class="dropdown-item" href="birthdays.html">Birthdays</a>
+                  <a class="dropdown-item" href="getwell.html">Get Well soon</a>
+                  <a class="dropdown-item" href="funeral.html">Funerals and sympathy</a>
+                </div>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="../events.html">Events and Services <span class="sr-only"></span></a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </div>
+    <!-- Jumbotron -->
+    <div class="jumbotron bg-faded">
+      <h1 class="text-primary">Our Products</h1>
+      <p class="lead">Browse through our products and get to us for more info. <br>Visit us for more.</p>
+    </div>
+    
+    <hr class="colorgraph">
+    <div class="row mb-5">
+      <div class="col-md-12">
+        <img src="../assets/banners/get-well-banner.jpg" alt="" class="img-fluid">
+      </div>
+    </div>
+    <h3 class="text-muted mb-3">Get well soon</h3>
+    <hr class="colorgraph">
+    <div class="row mb-3" id="getwell">
+      <div class="col-md-4 mb-3" v-for="item in items">
+        <div class="card text-center">
+          <img v-bind:src="item.image" alt="" class="card-img-top img-fluid img-fix">
+          <div class="card-block ">
+            <h4 class="card-title"> {{item.title}} </h4>
+            <p> {{item.description}} </p>
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#" class="btn btn-primary1 btn-sm">add to cart</a>
+              </div>
+              <div class="col-md-6">
+                price: {{item.price}}
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <!--another card e3f2fd-->
+      </div>
+    </div> <!--eo-row-->
+     <!-- Site footer -->
+    <footer class="footer">
+      <div class="text-center iso-l">
+        <h4>&copy; Flowers and Gift Shop 2017</h4>
+        <p>Contact Us on: 0708 44 33 96</p>
+        <img src="../favicon.ico" alt="">
+        <p>Or visit us at Nairobi City: Specific Location</p>
+      </div>
+    </footer>
+  </div>
+  <!-- /container -->
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/vue.js"></script>
+      <script src="../js/datajs/getwell.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="../js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>

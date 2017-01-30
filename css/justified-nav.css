@@ -1,0 +1,75 @@
+body {
+  padding-top: 20px;
+  background: rgba(172, 215, 112,0.4);
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+}
+.iso-l{
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.footer img{
+  margin-bottom: 10px;
+}
+.img-fix{
+  height: 200px;
+}
+.img-fliud{
+  max-width: 100%;
+  height: 200px;
+}
+.img-flud{
+   max-width: 100%;
+  height: 50px;
+}
+/* Main marketing message and sign up button e3f2fd*/
+.jumbotron {
+  text-align: center;
+  background-color: #e3f2fd;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+.navbar {
+  border: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+
+.hero{
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .navbar-nav .nav-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
