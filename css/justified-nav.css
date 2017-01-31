@@ -1,8 +1,80 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 body {
   padding-top: 20px;
   background: rgba(172, 215, 112,0.4);
 }
 
+.social-icons li a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.footer-social-icons ul {
+  padding: 0 !important;
+  list-style: none !important;
+}
+.social-icon {
+  color: #fff !important;
+}
+
+.footer-social-icons ul.social-icons {
+  margin-top: 10px !important;
+}
+
+.social-icons li {
+  vertical-align: top !important;
+  display: inline !important;
+  height: 100px !important;
+}
+
+.social-icons a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.fa-facebook {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #3d5b99;
+}
+
+.fa-facebook:hover {
+  background-color: #322f30;
+}
+
+.fa-twitter {
+  padding: 10px 12px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #00aced;
+}
+
+.fa-twitter:hover {
+  background-color: #322f30;
+}
+
+.fa-google-plus {
+  padding: 10px 9px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #e25714;
+}
+
+.fa-google-plus:hover {
+  background-color: #322f30;
+}
 .footer {
   padding-top: 40px;
   padding-bottom: 40px;
