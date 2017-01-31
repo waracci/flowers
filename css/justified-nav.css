@@ -1,6 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
+*{
+  list-style-type: none;
+}
 body {
   padding-top: 20px;
   background: rgba(172, 215, 112,0.4);

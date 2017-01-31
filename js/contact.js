@@ -16,10 +16,11 @@ var messageRef = firebase.database().ref('messages')
 var app = new Vue({
   el: '#fapp',
   data: {
+    verified: !1,
     newMessage: {
       email: '',
       message: ''
-    }
+    }    
   },
   //bind to firebase
   firebase: {

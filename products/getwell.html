@@ -65,27 +65,94 @@
     </div>
     <h3 class="text-muted mb-3">Get well soon</h3>
     <hr class="colorgraph">
-    <div class="row mb-3" id="getwell">
-      <div class="col-md-4 mb-3" v-for="item in items">
-        <div class="card text-center">
-          <img v-bind:src="item.image" alt="" class="card-img-top img-fluid img-fix">
-          <div class="card-block ">
-            <h4 class="card-title"> {{item.title}} </h4>
-            <p> {{item.description}} </p>
-            <div class="row">
-              <div class="col-md-6">
-                <a href="#" class="btn btn-primary1 btn-sm">add to cart</a>
-              </div>
-              <div class="col-md-6">
-                price: {{item.price}}
-              </div>
+    <div class=" mb-3" id="getwell">
+       <div class="card mb-3">
+        <div class="card-block" v-show="!verified">
+          <button @click="showCart = !showCart">
+        {{ items.length + (items.length > 1 || items.length === 0 ? " items" : " item") }}
+      </button>
+          <div class="text-center" v-show="showCart">
+            <div v-show="items.length > 0">
+              <ul>
+                <li v-for="item in items" transition="fade">
+                  <p><strong>{{ item.quantity }}</strong> - {{ item.title }} <button class="btn btn-outline-danger btn-sm" @click="removeFromCart(item)">remove item</button></p>
+                </li>
+              </ul>
+              <div><button @click="verified = true, showCart = false">Check out</button></div>
             </div>
-            
+            <div v-show="items.length === 0">
+              <p>Your cart is empty!</p>
+            </div>
           </div>
         </div>
-        <!--another card e3f2fd-->
       </div>
-    </div> <!--eo-row-->
+
+
+
+
+
+      <div class="row">
+        <div class="col-md-4" v-for="item in products" v-show="!verified">
+          <!--v-for here mate-->
+          <div class="card text-center mb-3">
+            <img v-bind:src="item.image" alt="" class="card-img-top img-fluid img-fix">
+            <div class="card-block ">
+              <hr class="colorgraph">
+              <h4 class="card-title"> {{item.title}} </h4>
+              <p> {{item.description}}</p>
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <a class="btn btn-primary1 btn-sm" @click="addToCart(item)">Add to cart</a>
+                </div>
+                <div class="col-md-6 col-xs-6">
+                  Price: Ksh.{{item.price}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--another card e3f2fd-->
+        </div>
+        <div class="card col-md-6 offset-md-3 mb-3 text-center" v-show="verified ">
+          <h3 class="text-muted">your cart</h3>
+          <div class="card-block" v-show="!sendCartDetails">
+            <h4 class="text-info" v-for="item in items"> <strong> {{item.quantity}} </strong> - {{item.title}}
+              <span> Ksh {{item.price * item.quantity}} </span>
+            </h4>
+            <hr>
+            <div class="total mb-3">
+              <h4 class="text-success">Total: <span> {{total}} </span></h4>
+              <button class="btn btn-success" @click="clearCart">clear cart</button>
+            </div>
+            <div>
+              <form id="form" v-on:submit.prevent="addUser">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">phone number</label>
+                  <input type="text" class="form-control" v-model="newUser.name" id="exampleInputEmail1" placeholder="phone number">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">email address</label>
+                  <input type="text" class="form-control" v-model="newUser.email" id="exampleInputPassword1" placeholder="email">
+                </div>
+                
+                <button type="submit" @click="sendCartDetails = true">submit cart</button>
+              </form>
+              <ul>
+                <li v-show="!validation.name"> phone number cannot be empty</li>
+                <li v-show="!validation.email">Enter a valid email address</li>
+              </ul>
+            </div>
+          </div>
+          <div v-show="sendCartDetails" class="card-block">
+            <p v-show="sendCartDetails" class="alert alert-success"> sent </p>
+            <a href="" class="btn btn-success">back</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div><!--eo-row-->
      <!-- Site footer -->
    <footer class="footer">
       <div class="text-center iso-l">
@@ -122,7 +189,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
       crossorigin="anonymous"></script>
       <script src="../js/bootstrap.min.js"></script>
-      <script src="../js/vue.js"></script>
+       <!-- Vue -->
+      <script src="https://unpkg.com/vue/dist/vue.js"></script>
+      <!-- Firebase -->
+      <script src="https://gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+      <!-- VueFire -->
+      <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
       <script src="../js/datajs/getwell.js"></script>
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
       <script src="../js/ie10-viewport-bug-workaround.js"></script>
