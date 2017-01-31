@@ -19,7 +19,8 @@ var app = new Vue({
     newMessage: {
       email: '',
       message: ''
-    }
+    },
+    verified: !1
   },
   //bind to firebase
   firebase: {
