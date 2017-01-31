@@ -13,7 +13,9 @@ body {
   background-color: #f7f7f7;
   padding: 20px;
 }
-
+.hero-logo img{
+  height: 300px;
+}
 .footer img{
   margin-bottom: 10px;
 }
