@@ -7,7 +7,7 @@
   <meta name="message" content="">
   <meta name="author" content="">
   <link rel="icon" href="favicon.ico">
-  <title>flower shop</title>
+  <title>Simona Flowers</title>
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.css" rel="stylesheet">
   <!-- Custom styles for this template -->
@@ -23,7 +23,7 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="favicon.ico" alt=""> Home</a>
+          <a class="navbar-brand" href="index.html"><img src="favicon.ico" alt=""> Home</a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item ">
@@ -32,7 +32,7 @@
               <li class="nav-item ">
                 <a class="nav-link" href="contact.html">Contact-us<span class="sr-only"></span></a>
               </li>
-                <li class="nav-item dropdown">
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item " href="products/love.html">Love and Romance</a>
@@ -55,17 +55,33 @@
     <div class="text-center bg-faded hero mb-3">
       <h1 class="text-muted">SIMONA FLOWERS</h1>
       <p class="lead">Get your fresh flowers and amazing gift cards at reasonable prices. <br>Visit us for more.</p>
-      <p><a class="btn btn-lg btn-primary1" href="products.html" role="button">View product categories</a></p>
+      <p><a class="btn btn-lg btn-primary1" href="products.html" role="button">product categories</a></p>
     </div>
-
-      <div class="row">
-        <div class="col-md-6 offset-3 text-center">
-          <div id="fapp">
-          
+    <div class="row text-center">
+      <div class="col-md-6 offset-md-3">
+          <hr class="colorgraph">
+        <div class="card">
+          <h3 class="text-muted">Contact Us</h3>
+          <div class="card-block">
+             <div id="fapp">
+          <form action="" id="form" v-on:submit.prevent="sendMessage">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input v-model="newMessage.email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleTextarea">your message</label>
+              <textarea v-model="newMessage.message" class="form-control" id="exampleTextarea" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">send message</button>
+          </form>
+        </div> <!-- fapp -->
           </div>
         </div>
+       
       </div>
-
+    </div>
     <!-- Site footer -->
     <footer class="footer">
       <div class="text-center iso-l">
@@ -76,6 +92,19 @@
         <p>Contact Us on: 0722 936 764 / 0720 368 504</p>
         <img src="favicon.ico" alt="">
         <p>email: info@simonaflowers.co.ke</p>
+        <div class="footer-social-icons">
+          <ul class="social-icons">
+            <li>
+              <a href="https://web.facebook.com/SimonaFlowersLtd/?_rdr" class="social-icon" target="_blank"> <i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/simonaflowers" class="social-icon" target="_blank"> <i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="" class="social-icon" target="_blank"> <i class="fa fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </div>
@@ -90,13 +119,13 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-  <!-- Firebase -->
-  <script src="https://gstatic.com/firebasejs/3.5.2/firebase.js"></script>
-     <!-- Vue -->
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
-  <!-- VueFire -->
-  <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
-    <script src="js/contact-us.js"></script>
+    <!-- Firebase -->
+    <script src="https://gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!-- VueFire -->
+    <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
