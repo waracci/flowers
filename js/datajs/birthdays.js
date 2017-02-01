@@ -25,7 +25,7 @@ let products = [
         id: 2,
         title: 'Birthday hamper', 
         description: 'Custom wrapped gift hampers.',
-        price: '',
+        price: 2000,
         quantity: 0,
         image: '../assets/birthday/birthday-hamper.jpg'
       },
