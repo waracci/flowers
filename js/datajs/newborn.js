@@ -43,7 +43,7 @@ let products = [
       description: 'Bouquet of fresh flowers to welcome that baby girl.',
       price: 2250,
       quantity: 0,
-      image: '../assets/newborn/baby-girl.jpg'
+      image: '../assets/newborn/delightful-basket.jpg'
     },
     {
       id: 2,
@@ -75,15 +75,7 @@ let products = [
       description: 'Water bouquet of fresh flowers.',
       price: 2300,
       quantity: 0,
-      image: '../assets/newborn/cute-girl.jpg'
-    },
-    {
-      id: 6,
-      title: 'Delightful Basket',
-      description: 'A handy bouquet of delightful flowers.',
-      price: 2250,
-      quantity: 0,
-      image: '../assets/newborn/delightful-basket.jpg'
+      image: '../assets/newborn/Gorgious angel basket= ksh 2000.jpg'
     }
   ]
 var newBorn = new Vue({

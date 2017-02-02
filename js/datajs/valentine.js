@@ -15,51 +15,51 @@ var cartItem = firebase.database().ref('selectedCartItem')
 let products = [
       {
       id: 7,
-      title: 'Prince Bear and Water Bouquet',
-      description: 'A lovely bear doll and a water bouquet.',
-      price: 4000,
+      title: 'chocolate and wine hamper',
+      description: 'Surprise your loved one with this hamper.',
+      price: 2200,
       quantity: 0,
-      image: '../assets/newborn/prince-bear.jpg'
+      image: '../assets/valentine/chocolate-wine.jpg'
     },
     {
       id: 8,
-      title: 'Pretty Bear Basket',
-      description: 'Pretty bear basket and a generous bouquet of flowers.',
-      price: 3500,
+      title: 'gift hampers',
+      description: 'love gift ideas hamper.',
+      price: '',
       quantity: 0,
-      image: '../assets/newborn/pretty-bear.jpg'
+      image: '../assets/valentine/love gift ideas hamper.jpg'
     },
     {
       id: 9,
-      title: 'Impressive Baloon and flower basket',
-      description: 'A bouquet of flowers and a cute balloon.',
-      price: 1500,
+      title: 'loved one flower',
+      description: 'A rose flower for your loved one.',
+      price: 700,
       quantity: 0,
-      image: '../assets/newborn/impressive-baloon.jpg'
+      image: '../assets/valentine/one I love=ksh 700.jpg'
     },
     {
       id: 1,
-      title: 'Baby Girl Bouquet',
-      description: 'Bouquet of fresh flowers to welcome that baby girl.',
-      price: 2250,
+      title: 'Red chocolate',
+      description: 'chocolate gift for a loved one.',
+      price: '',
       quantity: 0,
-      image: '../assets/newborn/baby-girl.jpg'
+      image: '../assets/valentine/red-chocolate.jpg'
     },
     {
       id: 2,
-      title: 'Baby Boy Bouquet',
-      description: 'Bouquet of mixed fresh flowers to welcome that baby boy.',
+      title: 'Tiffin Chocolate',
+      description: 'You can never go wrong with chocolate.',
       price: 2250,
       quantity: 0,
-      image: '../assets/newborn/baby-boy.jpg'
+      image: '../assets/valentine/TiffinChocolate.jpg'
     },
     {
       id: 3,
       title: 'Assorted flower basket',
-      description: 'A basket of superb flowers for your newborn one.',
+      description: 'A basket of superb flowers for your valentine one.',
       price: 1700,
       quantity: 0,
-      image: '../assets/newborn/assorted-flower.jpg'
+      image: '../assets/valentine/vals1.jpg'
     },
     {
       id: 4,
@@ -67,27 +67,19 @@ let products = [
       description: 'A garland of radiant flowers.',
       price: 2250,
       quantity: 0,
-      image: '../assets/newborn/brilliant-bouquet.jpg'
+      image: '../assets/valentine/vals2.jpg'
     },
     {
       id: 5,
-      title: 'Cute girl water bouquet',
-      description: 'Water bouquet of fresh flowers.',
+      title: 'Cute  bouquet',
+      description: 'bouquet of fresh flowers.',
       price: 2300,
       quantity: 0,
-      image: '../assets/newborn/cute-girl.jpg'
-    },
-    {
-      id: 6,
-      title: 'Delightful Basket',
-      description: 'A handy bouquet of delightful flowers.',
-      price: 2250,
-      quantity: 0,
-      image: '../assets/newborn/delightful-basket.jpg'
+      image: '../assets/valentine/IMG_20170110_135859_571.jpg'
     }
   ]
-var newBorn = new Vue({
-  el: '#newborn',
+var valentine = new Vue({
+  el: '#valentine',
   data: {
     items: [],
     products: products,
