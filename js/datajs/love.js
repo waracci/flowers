@@ -54,14 +54,6 @@ let products = [
       image: '../assets/love/fabulous-hamper.jpg'
     },
     {
-      id: 6,
-      title: 'Small Dozen Hand Roses',
-      description: 'A handy bouquet of roses.',
-      price: 1700,
-      quantity: 0,
-      image: '../assets/love/small-dozen.jpg'
-    },
-    {
       id: 7,
       title: 'Golden basket',
       description: 'Cherish your special someone with a lovely bouquet.',
