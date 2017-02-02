@@ -143,30 +143,83 @@
       <a href="products/valentine.html" class="text-danger btn btn-outline-info btn-lg">Valentines offer!!!</a>
       <hr class="colorgraph">
       </div>
-      <div class="row bg-white mb-3">
-        <div class="col-md-3">
-          <img src="assets/valentine/vals1.jpg" alt="" class="img-fluid">
+      <div id="index">
+      <div class="row mb-3">
+        <div class="col-md-3" v-for="item in products">
+        <!--vals-->
+        <div class="card">
+          <img v-bind:src="item.image" alt="" class="card-img-top img-fluid img-fix">
+            <div class="card-block bg-faded">
+              <hr class="colorgraph">
+              <h4 class="card-title"> {{item.title}} </h4>
+              <p> {{item.description}}</p>
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <a class="btn btn-primary1 btn-sm" @click="addToCart(item)">Add to cart</a>
+                </div>
+                <div class="col-md-6 col-xs-6">
+                  Price: Ksh.{{item.price}}
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="col-md-3">
-          <img src="assets/valentine/vals2.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="col-md-3">
-          <img src="assets/valentine/vals3.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="col-md-3">
-          <img src="assets/valentine/vals4.jpg" alt="" class="img-fluid">
         </div>
       </div>
       <div class="text-center">
         <a href="products/valentine.html" class="btn btn-outline-danger">see more valentines offers</a>
       </div>
       <hr class="colorgraph">
-      <div class="row mb-5">
-        <div class="col-md-12">
-          <img src="assets/valentine/Selection_016.png" alt="" class="img-fluid">
+      <div class="row mb-3" id="index">
+        <div class="col-md-3" v-for="item in products2">
+        <!--vals-->
+        <div class="card">
+          <img v-bind:src="item.image" alt="" class="card-img-top img-fluid img-fix">
+            <div class="card-block bg-faded">
+              <hr class="colorgraph">
+              <h4 class="card-title"> {{item.title}} </h4>
+              <p> {{item.description}}</p>
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <a class="btn btn-primary1 btn-sm" @click="addToCart(item)">Add to cart</a>
+                </div>
+                <div class="col-md-6 col-xs-6">
+                  Price: Ksh.{{item.price}}
+                </div>
+              </div>
+            </div>
+        </div>
         </div>
       </div>
-      
+      <div class="text-center">
+        <a href="products/birthdays.html" class="btn btn-outline-danger">see more birthday products.</a>
+        <hr class="colorgraph">
+      </div>
+       <div class="row mb-3" id="index">
+        <div class="col-md-3" v-for="item in products3">
+        <!--vals-->
+        <div class="card">
+          <img v-bind:src="item.image" alt="" class="card-img-top img-fluid img-fix">
+            <div class="card-block bg-faded">
+              <hr class="colorgraph">
+              <h4 class="card-title"> {{item.title}} </h4>
+              <p> {{item.description}}</p>
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <a class="btn btn-primary1 btn-sm" @click="addToCart(item)">Add to cart</a>
+                </div>
+                <div class="col-md-6 col-xs-6">
+                  Price: Ksh.{{item.price}}
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="products/getwell.html" class="btn btn-outline-danger">see more get well soon products.</a>
+        <hr class="colorgraph">
+      </div>
+      </div>
     </product>
     <!-- Site footer -->
     <footer class="footer">
@@ -203,6 +256,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
     crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+      <!-- Vue -->
+      <script src="https://unpkg.com/vue/dist/vue.js"></script>
+      <script src="js/datajs/index.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
 </body>
