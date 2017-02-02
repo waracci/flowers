@@ -17,7 +17,6 @@
 <body>
   <div class="container">
     <div class="masthead">
-      <h3 class="text-muted">SIMONA FLOWERS</h3>
       <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,11 +57,11 @@
       <img src="assets/simona-flowers-kenya-limited-logo-l.jpg" alt="" class="img-fluid">
     </div>
     <!-- Jumbotron -->
-    <div class="text-center bg-faded hero mb-3">
+    <div class="text-center bg-faded hero mb-5">
       <h1 class="text-muted">SIMONA FLOWERS</h1>
       <p class="lead"><strong>Simona Flowers Limited </strong>is a nationally recognized, full service, social and corporate events planning
         organization with a focus on specialized events and destination management.</p>
-      <div class="row text-center">
+      <!--<div class="row text-center">
         <div class="col-md-6 offset-md-3">
           <ul class="list-group ">
             <li class="list-group-item ">
@@ -88,7 +87,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div>-->
       <p><a class="btn btn-lg btn-primary1" href="products.html" role="button">product categories</a></p>
     </div>
     <!-- carousel -->
@@ -140,85 +139,83 @@
     <product>
       <h3 class="text-muted">Valentines products</h3>
       <div id="index">
-      <div class="row mb-3">
-        <div class="col-md-3" v-for="item in products">
-        <!--vals-->
-        <div class="card">
-          <img v-bind:src="item.image" alt="" class="card-img-top img-fluid img-fix">
-            <div class="card-block bg-faded">
-              <hr class="colorgraph">
-              <h4 class="card-title"> {{item.title}} </h4>
-              <p> {{item.description}}</p>
-              <div class="row">
-                <div class="col-md-6 col-xs-6">
-                  <a class="btn btn-primary1 btn-sm" @click="addToCart(item)">Add to cart</a>
-                </div>
-                <div class="col-md-6 col-xs-6">
-                  Price: Ksh.{{item.price}}
-                </div>
-              </div>
-            </div>
-        </div>
-        </div>
-      </div>
-      <div class="text-center">
-        <a href="products/valentine.html" class="btn btn-outline-danger">see more valentines offers</a>
-      </div>
-      <hr class="colorgraph">
-      <h3 class="text-muted">Birthday products</h3>
-      <div class="row mb-3" id="index">
-        
-        <div class="col-md-3" v-for="item in products2">
-        <!--vals-->
-        <div class="card">
-          <img v-bind:src="item.image" alt="" class="card-img-top img-fluid img-fix">
-            <div class="card-block bg-faded">
-              <hr class="colorgraph">
-              <h4 class="card-title"> {{item.title}} </h4>
-              <p> {{item.description}}</p>
-              <div class="row">
-                <div class="col-md-6 col-xs-6">
-                  <a class="btn btn-primary1 btn-sm" @click="addToCart(item)">Add to cart</a>
-                </div>
-                <div class="col-md-6 col-xs-6">
-                  Price: Ksh.{{item.price}}
+        <div class="row mb-3">
+          <div class="col-md-3" v-for="item in products">
+            <!--vals-->
+            <div class="card">
+              <img v-bind:src="item.image" alt="" class="card-img-top img-fluid img-fix">
+              <div class="card-block bg-faded">
+                <hr class="colorgraph">
+                <h4 class="card-title"> {{item.title}} </h4>
+                <p> {{item.description}}</p>
+                <div class="row">
+                  <div class="col-md-6 col-xs-6">
+                    <a class="btn btn-primary1 btn-sm" @click="addToCart(item)">Add to cart</a>
+                  </div>
+                  <div class="col-md-6 col-xs-6">
+                    Price: Ksh.{{item.price}}
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
+        <div class="text-center">
+          <a href="products/valentine.html" class="btn btn-outline-danger">see more valentines offers</a>
         </div>
-      </div>
-      <div class="text-center">
-        <a href="products/birthdays.html" class="btn btn-outline-danger">see more birthday products.</a>
         <hr class="colorgraph">
-      </div>
-      <h3 class="text-muted">Get well soon products</h3>
-       <div class="row mb-3" id="index">
-         
-        <div class="col-md-3" v-for="item in products3">
-        <!--vals-->
-        <div class="card">
-          <img v-bind:src="item.image" alt="" class="card-img-top img-fluid img-fix">
-            <div class="card-block bg-faded">
-              <hr class="colorgraph">
-              <h4 class="card-title"> {{item.title}} </h4>
-              <p> {{item.description}}</p>
-              <div class="row">
-                <div class="col-md-6 col-xs-6">
-                  <a class="btn btn-primary1 btn-sm" @click="addToCart(item)">Add to cart</a>
-                </div>
-                <div class="col-md-6 col-xs-6">
-                  Price: Ksh.{{item.price}}
+        <h3 class="text-muted">Birthday products</h3>
+        <div class="row mb-3" id="index">
+          <div class="col-md-3" v-for="item in products2">
+            <!--vals-->
+            <div class="card">
+              <img v-bind:src="item.image" alt="" class="card-img-top img-fluid img-fix">
+              <div class="card-block bg-faded">
+                <hr class="colorgraph">
+                <h4 class="card-title"> {{item.title}} </h4>
+                <p> {{item.description}}</p>
+                <div class="row">
+                  <div class="col-md-6 col-xs-6">
+                    <a class="btn btn-primary1 btn-sm" @click="addToCart(item)">Add to cart</a>
+                  </div>
+                  <div class="col-md-6 col-xs-6">
+                    Price: Ksh.{{item.price}}
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
+        <div class="text-center">
+          <a href="products/birthdays.html" class="btn btn-outline-danger">see more birthday products.</a>
+          <hr class="colorgraph">
         </div>
-      </div>
-      <div class="text-center">
-        <a href="products/getwell.html" class="btn btn-outline-danger">see more get well soon products.</a>
-        <hr class="colorgraph">
-      </div>
+        <h3 class="text-muted">Get well soon products</h3>
+        <div class="row mb-3" id="index">
+          <div class="col-md-3" v-for="item in products3">
+            <!--vals-->
+            <div class="card">
+              <img v-bind:src="item.image" alt="" class="card-img-top img-fluid img-fix">
+              <div class="card-block bg-faded">
+                <hr class="colorgraph">
+                <h4 class="card-title"> {{item.title}} </h4>
+                <p> {{item.description}}</p>
+                <div class="row">
+                  <div class="col-md-6 col-xs-6">
+                    <a class="btn btn-primary1 btn-sm" @click="addToCart(item)">Add to cart</a>
+                  </div>
+                  <div class="col-md-6 col-xs-6">
+                    Price: Ksh.{{item.price}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="products/getwell.html" class="btn btn-outline-danger">see more get well soon products.</a>
+          <hr class="colorgraph">
+        </div>
       </div>
     </product>
     <!-- Site footer -->
@@ -256,9 +253,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
     crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-      <!-- Vue -->
-      <script src="https://unpkg.com/vue/dist/vue.js"></script>
-      <script src="js/datajs/index.js"></script>
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="js/datajs/index.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
 </body>
