@@ -18,7 +18,7 @@ var funeral_category = new Vue({
   data: {
     
   },
-  // firebase binding
+  // firebase binding.
   firebase: {
     users: usersRef,
     selectedCartItem: cartItem,
