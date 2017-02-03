@@ -15,7 +15,7 @@ var cartItem = firebase.database().ref('selectedCartItem')
 let products = [
       {
       id: 1,
-      title: 'chocolate and wine hamper',
+      title: 'Cute teddy bear and flower bouquet',
       description: 'Surprise your loved one with this hamper.',
       price: 3500,
       quantity: 0,
@@ -23,7 +23,7 @@ let products = [
     },
     {
       id: 2,
-      title: 'gift hampers',
+      title: 'valentine gift hampers',
       description: 'love gift ideas hamper.',
       price: 1500,
       quantity: 0,
@@ -31,7 +31,7 @@ let products = [
     },
     {
       id: 3,
-      title: 'loved one flower',
+      title: 'loved one flower and teddy bear',
       description: 'A rose flower for your loved one.',
       price: 4000,
       quantity: 0,
@@ -39,7 +39,7 @@ let products = [
     },
     {
       id: 4,
-      title: 'Red chocolate',
+      title: 'chocolate and flowers',
       description: 'chocolate gift for a loved one.',
       price: 3000,
       quantity: 0,
@@ -47,7 +47,7 @@ let products = [
     },
     {
       id: 5,
-      title: 'Tiffin Chocolate',
+      title: 'wine and Chocolate',
       description: 'You can never go wrong with chocolate.',
       price: 2250,
       quantity: 0,
@@ -93,6 +93,54 @@ let products = [
       quantity: 0,
       image: '../assets/valentine/IMG_20170126_120226 wt.jpg'
     },
+    {
+      id: 11,
+      title: 'loved one flower',
+      description: 'A rose flower for your loved one.',
+      price: 4000,
+      quantity: 0,
+      image: '../assets/valentine/single n teddy.jpg'
+    },
+    {
+      id: 12,
+      title: 'Tiffin Chocolate ',
+      description: 'A box of exotic chocolate.',
+      price: 1000,
+      quantity: 0,
+      image: '../assets/valentine/TiffinChocolate.jpg'
+    },
+    {
+      id: 13,
+      title: 'lovely gift hampers',
+      description: 'Hamper with lovely gifts.',
+      price: 1000,
+      quantity: 0,
+      image: '../assets/valentine/rotated hampers.jpg'
+    },
+    {
+      id: 14,
+      title: 'single flower and chocolate',
+      description: 'A box of chocolate and flowers.',
+      price: 1000,
+      quantity: 0,
+      image: '../assets/valentine/single n chocolate.jpg'
+    },
+    {
+      id: 15,
+      title: 'single flower and teddy',
+      description: 'Cute teddy bear and flower.',
+      price: 1000,
+      quantity: 0,
+      image: '../assets/valentine/vals3.jpg'
+    },
+    {
+      id: 16,
+      title: 'flowers and a teddy',
+      description: 'Bouquet of flowers and a white teddy.',
+      price: 1000,
+      quantity: 0,
+      image: '../assets/valentine/teddy and a dozen.jpg'
+    }
   ]
 var valentine = new Vue({
   el: '#valentine',
