@@ -14,47 +14,47 @@ var cartItem = firebase.database().ref('selectedCartItem')
 // vue instance to display birthday products 
 let products = [
       {
-      id: 7,
+      id: 1,
       title: 'chocolate and wine hamper',
       description: 'Surprise your loved one with this hamper.',
-      price: 2200,
+      price: 3500,
       quantity: 0,
-      image: '../assets/valentine/chocolate-wine.jpg'
-    },
-    {
-      id: 8,
-      title: 'gift hampers',
-      description: 'love gift ideas hamper.',
-      price: '',
-      quantity: 0,
-      image: '../assets/valentine/love gift ideas hamper.jpg'
-    },
-    {
-      id: 9,
-      title: 'loved one flower',
-      description: 'A rose flower for your loved one.',
-      price: 700,
-      quantity: 0,
-      image: '../assets/valentine/one I love=ksh 700.jpg'
-    },
-    {
-      id: 1,
-      title: 'Red chocolate',
-      description: 'chocolate gift for a loved one.',
-      price: '',
-      quantity: 0,
-      image: '../assets/valentine/red-chocolate.jpg'
+      image: '../assets/valentine/teddy and water bouquet.jpg'
     },
     {
       id: 2,
+      title: 'gift hampers',
+      description: 'love gift ideas hamper.',
+      price: 1500,
+      quantity: 0,
+      image: '../assets/valentine/Untitled-1 CUTE.jpg'
+    },
+    {
+      id: 3,
+      title: 'loved one flower',
+      description: 'A rose flower for your loved one.',
+      price: 4000,
+      quantity: 0,
+      image: '../assets/valentine/teddy dozn.jpg'
+    },
+    {
+      id: 4,
+      title: 'Red chocolate',
+      description: 'chocolate gift for a loved one.',
+      price: 3000,
+      quantity: 0,
+      image: '../assets/valentine/water bouquet and chocholate.jpg'
+    },
+    {
+      id: 5,
       title: 'Tiffin Chocolate',
       description: 'You can never go wrong with chocolate.',
       price: 2250,
       quantity: 0,
-      image: '../assets/valentine/TiffinChocolate.jpg'
+      image: '../assets/valentine/busket wine n chocolate.jpg'
     },
     {
-      id: 3,
+      id: 6,
       title: 'Assorted flower basket',
       description: 'A basket of superb flowers for your valentine one.',
       price: 1700,
@@ -62,7 +62,7 @@ let products = [
       image: '../assets/valentine/vals1.jpg'
     },
     {
-      id: 4,
+      id: 7,
       title: 'Brilliant Bouquet',
       description: 'A garland of radiant flowers.',
       price: 2250,
@@ -70,13 +70,29 @@ let products = [
       image: '../assets/valentine/vals2.jpg'
     },
     {
-      id: 5,
+      id: 8,
       title: 'Cute  bouquet',
       description: 'bouquet of fresh flowers.',
-      price: 2300,
+      price: 4000,
       quantity: 0,
-      image: '../assets/valentine/IMG_20170110_135859_571.jpg'
-    }
+      image: '../assets/valentine/wine water bouquet.jpg'
+    },
+    {
+      id: 9,
+      title: 'hand  bouquet',
+      description: 'bouquet of fresh flowers.',
+      price: 1000,
+      quantity: 0,
+      image: '../assets/valentine/edited hand boquet wt CUTE.jpg'
+    },
+    {
+      id: 10,
+      title: 'loved one flower',
+      description: 'A rose flower for your loved one.',
+      price: 4000,
+      quantity: 0,
+      image: '../assets/valentine/IMG_20170126_120226 wt.jpg'
+    },
   ]
 var valentine = new Vue({
   el: '#valentine',

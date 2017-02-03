@@ -4,33 +4,33 @@ let products = [
     id: 2,
     title: 'Tiffin Chocolate',
     description: 'You can never go wrong with chocolate.',
-    price: 2250,
+    price: 3500,
     quantity: 0,
-    image: 'assets/valentine/TiffinChocolate.jpg'
+    image: 'assets/valentine/teddy and water bouquet.jpg'
   },
   {
     id: 3,
     title: 'Assorted flower basket',
     description: 'A basket of superb flowers.',
-    price: 1700,
+    price: 3000,
     quantity: 0,
-    image: 'assets/valentine/vals1.jpg'
+    image: 'assets/valentine/water bouquet and chocholate.jpg'
   },
   {
     id: 4,
     title: 'Brilliant Bouquet',
     description: 'A garland of radiant flowers.',
-    price: 2250,
+    price: 5000,
     quantity: 0,
-    image: 'assets/valentine/vals2.jpg'
+    image: 'assets/valentine/water bouquet teddy bear and chocolate.jpg'
   },
   {
     id: 5,
     title: 'Cute  bouquet',
     description: 'bouquet of fresh flowers.',
-    price: 2300,
+    price: 4000,
     quantity: 0,
-    image: 'assets/valentine/IMG_20170110_135859_571.jpg'
+    image: 'assets/valentine/wine water bouquet.jpg'
   }
 ]
 
