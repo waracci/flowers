@@ -17,6 +17,31 @@
 <body>
   <div class="container">
     <h3 class="text-muted">Admin Panel</h3>
+    
+<!--my vue app starts here mate-->
+    <div id="fapp">
+      <div id="auth" v-show="signOut">
+        <div class="card mb-5">
+          <form class="card-block" id="form" v-on:submit.prevent="">
+            <div>
+            <div class="form-group">
+              <label for="inputPassPhrase">PassPhrase</label>
+              <input type="text" class="form-control" id="inputPassPhrase" v-model="newCred.id">
+            </div>
+            <div class="form-group" >
+              <label for="inputPassWord">PassWord</label>
+              <input type="text" class="form-control" id="inputPassWord" v-model="newCred.name">
+            </div>
+            </div>
+            <div >
+              <button type="submit" class="btn btn-success" @click="signOut=false, signIn=true, adminAuth">submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="dashboard" v-show="signIn">
+        
+<h3 class="text-muted">Admin Panel</h3>
     <div id="admin">
       <h3 class="text-info">Cart Orders</h3>
       <hr class="colorgraph">
@@ -49,15 +74,27 @@
        </ul>
       </div>
     </div>
+
+
+
+
+
+        <button class="btn btn-danger" @click="signOut=true, signIn=false">logout</button>
+      </div>
+      <div v-show="warn">
+        Unauthenticated
+      </div>
+    </div>
+    <!--my vue app ends here mate-->
+
   </div>
   <!-- /container -->
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster  https://code.jquery.com/jquery-3.1.1.slim.min.js -->
-  <script src="js/jquery.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="js/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" ></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
