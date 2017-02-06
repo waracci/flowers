@@ -16,14 +16,18 @@ var messagesRef = firebase.database().ref('messages')
 var funeral_category = new Vue({
   el: '#admin',
   data: {
-    
+    signIn: !1,
+    signOut: 1,
+    warn: false,
+    newCred: {
+      id: "",
+      name: ""
+    }
   },
-  // firebase binding
+  // firebase binding.
   firebase: {
     users: usersRef,
     selectedCartItem: cartItem,
     messages: messagesRef
   }
-  
- 
 })

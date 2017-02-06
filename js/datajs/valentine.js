@@ -97,7 +97,7 @@ let products = [
       id: 11,
       title: 'loved one flower',
       description: 'A rose flower for your loved one.',
-      price: 4000,
+      price: 700,
       quantity: 0,
       image: '../assets/valentine/single n teddy.jpg'
     },
@@ -113,7 +113,7 @@ let products = [
       id: 13,
       title: 'lovely gift hampers',
       description: 'Hamper with lovely gifts.',
-      price: 1000,
+      price: 4000,
       quantity: 0,
       image: '../assets/valentine/rotated hampers.jpg'
     },
@@ -137,7 +137,7 @@ let products = [
       id: 16,
       title: 'flowers and a teddy',
       description: 'Bouquet of flowers and a white teddy.',
-      price: 1000,
+      price: 1500,
       quantity: 0,
       image: '../assets/valentine/teddy and a dozen.jpg'
     }

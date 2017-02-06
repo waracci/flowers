@@ -145,7 +145,6 @@ var birthday_category = new Vue({
           cartItem.push(this.items)
           this.newUser.name=""
           this.newUser.email=""
-          this.items = ""
         }
       }
   }
