@@ -62,12 +62,14 @@ pre {
 
 a {
   background-color: transparent;
+  cursor: pointer;
   -webkit-text-decoration-skip: objects;
 }
 
 a:active,
 a:hover {
   outline-width: 0;
+  cursor: pointer;
 }
 
 abbr[title] {
