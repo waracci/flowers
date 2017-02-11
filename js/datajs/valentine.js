@@ -83,7 +83,7 @@ let products = [
       description: 'bouquet of fresh flowers.',
       price: 1000,
       quantity: 0,
-      image: '../assets/valentine/edited hand boquet wt CUTE.jpg'
+      image: '../assets/valentine/edited_hand_boquet_wt_CUTE.jpg'
     },
     {
       id: 10,
@@ -91,7 +91,7 @@ let products = [
       description: 'A rose flower for your loved one.',
       price: 4000,
       quantity: 0,
-      image: '../assets/valentine/IMG_20170126_120226 wt.jpg'
+      image: '../assets/valentine/IMG_20170126_120226_wt.jpg'
     },
     {
       id: 11,
