@@ -101,7 +101,7 @@ var birthday_category = new Vue({
       email: ""
     }
   },
-  // fireebase binding
+  // firebase binding
   firebase: {
     users: usersRef,
     selectedCartItem: cartItem 
@@ -139,14 +139,17 @@ var birthday_category = new Vue({
     clearCart() {
       this.items = ""
     },
-     addUser: function (){
-        if (this.isValid){
-          usersRef.push(this.newUser)
-          cartItem.push(this.items)
-          this.newUser.name=""
-          this.newUser.email=""
-        }
+      addUser: function (){
+      orders = []
+      if (this.isValid){
+        this.items.push({user: this.newUser.name}  )
+        cartItem.push( this.items )
+        usersRef.push(this.newUser)
+        this.newUser.name=""
+        this.newUser.email=""
+        this.items = ""
       }
+    }
   }
  
 })

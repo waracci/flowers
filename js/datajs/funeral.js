@@ -138,15 +138,17 @@ var funeral_category = new Vue({
     clearCart() {
       this.items = ""
     },
-     addUser: function (){
-        if (this.isValid){
-          usersRef.push(this.newUser)
-          cartItem.push(this.items)
-          this.newUser.name=""
-          this.newUser.email=""
-          this.items = ""
-        }
+      addUser: function (){
+      orders = []
+      if (this.isValid){
+        this.items.push({user: this.newUser.name}  )
+        cartItem.push( this.items )
+        usersRef.push(this.newUser)
+        this.newUser.name=""
+        this.newUser.email=""
+        this.items = ""
       }
+    }
   }
  
 })
