@@ -49,7 +49,7 @@ let products = [
       id: 5,
       title: 'wine and Chocolate',
       description: 'You can never go wrong with chocolate.',
-      price: 2250,
+      price: 5000,
       quantity: 0,
       image: '../assets/valentine/busket wine n chocolate.jpg'
     },
