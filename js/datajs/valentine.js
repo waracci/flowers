@@ -105,7 +105,7 @@ let products = [
       id: 12,
       title: 'Tiffin Chocolate ',
       description: 'A box of exotic chocolate.',
-      price: 1000,
+      price: 2500,
       quantity: 0,
       image: '../assets/valentine/TiffinChocolate.jpg'
     },
@@ -193,15 +193,17 @@ var valentine = new Vue({
     clearCart() {
       this.items = ""
     },
-     addUser: function (){
-        if (this.isValid){
-          usersRef.push(this.newUser)
-          cartItem.push(this.items)
-          this.newUser.name=""
-          this.newUser.email=""
-          this.items = ""
-        }
+    addUser: function (){
+      orders = []
+      if (this.isValid){
+        this.items.push({user: this.newUser.name}  )
+        cartItem.push( this.items )
+        usersRef.push(this.newUser)
+        this.newUser.name=""
+        this.newUser.email=""
+        this.items = ""
       }
+    }
   }
  
 })
