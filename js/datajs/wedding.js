@@ -8,41 +8,16 @@ var config = {
 }
 firebase.initializeApp(config);
 
+var weddingRef = firebase.database().ref('wedding') 
 var usersRef = firebase.database().ref('users')
 var cartItem = firebase.database().ref('selectedCartItem')
 
 // vue instance to display birthday products 
-let products = [
-      {
-      id: 1,
-      title: 'Limo Services',
-      description: 'Elegant Limousine for the special day.',
-      price: '',
-      quantity: 0,
-      image: '../assets/wedding/sweet-limo.jpg'
-    },
-    {
-      id: 2,
-      title: 'Bridal Bouquets',
-      description: 'Bridal bouquets available in all shapes and sizes.',
-      price: '',
-      quantity: 0,
-      image: '../assets/wedding/table-setup.png'
-    },
-    {
-      id: 3,
-      title: 'Reception Venue Set-up',
-      description: 'We do reception venues decorations.',
-      price: '',
-      quantity: 0,
-      image: '../assets/wedding/bridal-bouquet.png'
-    }
-  ]
+
 var wedding = new Vue({
   el: '#wedding',
   data: {
     items: [],
-    products: products,
     showCart: false,
     verified: false,
     sendCartDetails: !1,
@@ -53,6 +28,7 @@ var wedding = new Vue({
   },
   // firebase binding
   firebase: {
+    wedding: weddingRef,
     users: usersRef,
     selectedCartItem: cartItem 
   },

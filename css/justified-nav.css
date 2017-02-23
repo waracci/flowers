@@ -22,6 +22,40 @@ a:hover {
 
   cursor: pointer;
 }
+
+.item {
+  background: #abc;
+  padding: 5px;
+  text-align: center;
+  font-size: 2rem;
+  margin: 5px;
+}
+
+.item img {
+  height: 300px;
+}
+
+@media screen and (max-width: 480px) {
+  .item img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .item img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .item img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .item img {
+    height: 200px;
+  }
+}
+
 .social-icons li a {
   text-decoration: none !important;
   color: #fff !important;
@@ -102,8 +136,13 @@ a:hover {
   padding: 20px;
 }
 .hero-logo img{
-  height: 300px;
+  height: auto;
 }
+
+.navbar-light .navbar-nav .nav-link {
+    margin-right: 20px !important;
+}
+
 .footer img{
   margin-bottom: 10px;
 }

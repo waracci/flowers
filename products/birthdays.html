@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="birthday and celebration products by simona flowers kenya, kenya's leading and best flower shop and event management company in nairobi">
+  <meta name="keywords" content="simona flowers, flowers in kenya, flowers in nairobi, flower delivery nairobi, simona flowers kenya, birthday planning nairobi, birthday products">
   <meta http-equiv="content-type" content="text/html;charset=UTF-8">
   <meta name="author" content="simona flowers kenya limited">
   <link rel="icon" href="../favicon.ico">
   <title>Simona Flowers</title>
   <!-- Bootstrap core CSS -->
-  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
   <!-- Custom styles for this template -->
   <link href="../css/justified-nav.css" rel="stylesheet">
 </head>
@@ -93,7 +94,7 @@
       </div>
 
       <div class="row">
-        <div class="col-md-3" v-for="item in products" v-show="!verified">
+        <div class="col-md-3" v-for="item in birthday" v-show="!verified">
           <!--v-for here mate-->
           <div class="card text-center mb-3">
             <img v-bind:src="item.image" alt="" class="card-img-top img-fluid img-fix">
