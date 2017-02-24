@@ -147,7 +147,8 @@ a:hover {
   margin-bottom: 10px;
 }
 .img-fix{
-  height: 200px;
+  min-height: 200px;
+  max-height: 350px;
 }
 .img-fliud{
   max-width: 100%;
@@ -201,4 +202,17 @@ a:hover {
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+@media all and (min-width: 341px) and (max-width: 767px){
+  .card{
+    max-width: 341px !important; 
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+  .container{
+ width: 856px !important;
+  }
+  
 }
