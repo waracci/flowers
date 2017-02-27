@@ -60,13 +60,13 @@ let products2 = [{
     image: 'assets/birthday/baby-flower-basket.jpg'
   },
   {
-    id: 4,
-    title: 'Delicious gift collection',
-    description: 'Basketful of wonderful gifts.',
-    price: 5500,
-    quantity: 0,
-    image: 'assets/birthday/delicious-gift-collection.jpg'
-  }
+        id: 7,
+        title: 'Impressive blossomin flower', 
+        description: 'A bouquet of lovely blossomin flowers.',
+        price: 2250,
+        quantity: 0,
+        image: 'assets/birthday/impressive-blossoming-flower.jpg'
+      },
 ]
 
 let products3 = [
@@ -92,7 +92,7 @@ let products3 = [
       description: 'Custom made delicious cake .',
       price: 1500,
       quantity: 0,
-      image: 'assets/get-well/get-well-cake.jpg'
+      image: 'assets/get-well/executive-healer.jpg'
     },
     {
       id: 4,
@@ -100,7 +100,7 @@ let products3 = [
       description: 'A bundle of healthy fruits and fresh juice.',
       price: 3500,
       quantity: 0,
-      image: 'assets/get-well/delicious-nature.jpg'
+      image: 'assets/get-well/friendship-bouquet.png'
     }
 ]
 
