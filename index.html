@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,11 +8,12 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8">
   <meta name="author" content="simona flowers kenya limited">
   <link rel="icon" href="favicon.ico">
-  <title>Simona Flowers</title>
+  <title>Simona Flowers home</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.min.css">
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="css/justified-nav.css" rel="stylesheet">
   <script>
@@ -72,18 +72,18 @@
     </div>
     <!-- Jumbotron -->
     <div class="text-center bg-faded hero mb-5">
-      <h1 class="text-muted">Simona Flowers</h1>
+      <h1 class="text-muted">Simona Flowers </h1>
       <p class="lead"><strong>Simona Flowers Limited </strong>is a nationally recognized, full service, social and corporate events planning
         organization with a focus on specialized events and destination management.</p>
       <p><a class="btn btn-lg btn-outline-info" href="products.html" role="button">product categories</a></p>
     </div>
     <!-- carousel -->
    <div class="owl-carousel owl-theme">
-  <div class="item"><img class="owl-lazy" data-src="https://static.pexels.com/photos/87840/daisy-pollen-flower-nature-87840.jpeg" alt="" /></div>
-  <div class="item"><img class="owl-lazy" data-src="https://static.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg" alt="" /></div>
-  <div class="item"><img class="owl-lazy" data-src="https://static.pexels.com/photos/68681/rose-orange-flowers-flower-68681.jpeg" alt="" /></div>
-  <div class="item"><img class="owl-lazy" data-src="https://static.pexels.com/photos/40502/rose-red-love-dew-40502.jpeg" alt="" /></div>
-  <div class="item"><img class="owl-lazy" data-src="https://static.pexels.com/photos/52631/pexels-photo-52631.jpeg" alt="" /></div>
+  <div class="item"><img class="owl-lazy" data-src="assets/valentine/water bouquet and chocholate.jpg" alt="" /></div>
+  <div class="item"><img class="owl-lazy" data-src="assets/birthday/birthday-hamper.jpg" alt="" /></div>
+  <div class="item"><img class="owl-lazy" data-src="assets/valentine/wine water bouquet.jpg" alt="" /></div>
+  <div class="item"><img class="owl-lazy" data-src="assets/birthday/baby-flower-basket.jpg" alt="" /></div>
+  <div class="item"><img class="owl-lazy" data-src="assets/get-well/get-well-cake.jpg" alt="" /></div>
 </div>
     <!-- EO carousel -->
     <!--cards here-->
@@ -107,15 +107,8 @@
                 <p> {{item.description}}</p>
                 
               </div>
-              <div class="card-footer">
-                <div class="row">
-                  <div class="col-md-6 col-xs-6">
-                    <a class="btn btn-outline-info btn-sm" @click="addToCart(item)">Add to cart</a>
-                  </div>
-                  <div class="col-md-6 col-xs-6">
-                    Ksh.{{item.price}}
-                  </div>
-                </div>
+              <div class="card-footer text-center">
+                Ksh.{{item.price}}
               </div>
             </div><!--/card-->
             </div>
@@ -135,13 +128,8 @@
                 <hr class="colorgraph">
                 <h4 class="card-title"> {{item.title}} </h4>
                 <p> {{item.description}}</p>
-                <div class="row">
-                  <div class="col-md-6 col-xs-6">
-                    <a class="btn btn-outline-info btn-sm" @click="addToCart(item)">Add to cart</a>
-                  </div>
-                  <div class="col-md-6 col-xs-6">
-                    Price: Ksh.{{item.price}}
-                  </div>
+                <div class="card-footer text-center">
+                Price: Ksh.{{item.price}}                  
                 </div>
               </div>
             </div>
@@ -161,13 +149,8 @@
                 <hr class="colorgraph">
                 <h4 class="card-title"> {{item.title}} </h4>
                 <p> {{item.description}}</p>
-                <div class="row">
-                  <div class="col-md-6 col-xs-6">
-                    <a class="btn btn-outline-info btn-sm" @click="addToCart(item)">Add to cart</a>
-                  </div>
-                  <div class="col-md-6 col-xs-6">
-                    Price: Ksh.{{item.price}}
-                  </div>
+                <div class="card-footer text-center">
+                  Price: Ksh.{{item.price}}
                 </div>
               </div>
             </div>
@@ -198,7 +181,7 @@
               <a href="https://twitter.com/simonaflowers" class="social-icon" target="_blank"> <i class="fa fa-twitter"></i></a>
             </li>
             <li>
-              <a href="" class="social-icon" target="_blank"> <i class="fa fa-google-plus"></i></a>
+              <a href="http://simonaflowersltd.blogspot.co.ke/" class="social-icon" target="_blank"> <i class="fa fa-google-plus"></i></a>
             </li>
           </ul>
         </div>

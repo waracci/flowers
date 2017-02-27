@@ -68,8 +68,11 @@ var valentine = new Vue({
     addUser: function (){
       orders = []
       if (this.isValid){
-        this.items.push({user: this.newUser.name}  )
-        cartItem.push( this.items )
+        this.items.push({user: this.newUser.name})
+        for (var i=0; i<this.items.length;i++){
+          delete this.items[i]['.key']
+        }
+        cartItem.push(this.items)
         usersRef.push(this.newUser)
         this.newUser.name=""
         this.newUser.email=""
