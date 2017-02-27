@@ -1,7 +1,9 @@
 // Initialize Firebase
-var config = {
-  apiKey: "AIzaSyB8vafV9JwQh-3iJxe5tUBUI0qZY2PhvuU",
-  authDomain: "vueclient.firebaseapp.com",
-  databaseURL: "https://vueclient.firebaseio.com"
-}
-firebase.initializeApp(config);
+  var config = {
+    apiKey: "AIzaSyCpObxPf278HhCfrkbc1JfFa-t__O10uY8",
+    authDomain: "simona-flowers.firebaseapp.com",
+    databaseURL: "https://simona-flowers.firebaseio.com",
+    storageBucket: "simona-flowers.appspot.com",
+    messagingSenderId: "299075181257"
+  };
+  firebase.initializeApp(config);
